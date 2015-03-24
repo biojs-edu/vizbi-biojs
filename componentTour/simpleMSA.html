@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Your amazing HTML page</title>
+	<link href="../lib/msa.css"  rel="stylesheet">
+</head>
+<body>
+
+	
+	<!-- Create a Div Container -->
+	<div id="tree"></div>
+
+	<!-- Include the local source file -->
+	<script type="text/javascript" src="../lib/msa.js"></script>
+	
+	<!-- Adjust your tree -->
+	<script>
+		//Require the tree
+		var msa = require("msa");
+		
+		//Create a tree
+		var m = new msa({
+			el: document.getElementById("tree"),
+			importURL: "./results/gfp.clustal",
+		});
+		m.render() // draw the MSA onto the webpage
+		
+	</script>
+</body>
+</html>

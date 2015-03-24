@@ -569,7 +569,6 @@ module.exports = Visibility = Model.extend({
   },
   calcDefaults: function(seqs) {
     var ids, seq;
-    console.log(seqs);
     if (seqs.length > 0) {
       seq = seqs.at(0);
       ids = seq.get("ids");
@@ -606,7 +605,7 @@ module.exports = Zoomer = Model.extend({
     rowHeight: 15,
     autoResize: true,
     textVisible: true,
-    labelIdLength: 30,
+    labelIdLength: 50,
     labelNameLength: 100,
     labelPartLength: 15,
     labelCheckLength: 15,
