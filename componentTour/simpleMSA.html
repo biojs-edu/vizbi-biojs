@@ -5,11 +5,11 @@
 	<title>Your amazing HTML page</title>
 	<link href="../lib/msa.css"  rel="stylesheet">
 </head>
-<body>
+<body style="background-color: white">
 
 	
 	<!-- Create a Div Container -->
-	<div id="tree"></div>
+	<div id="msa"></div>
 
 	<!-- Include the local source file -->
 	<script type="text/javascript" src="../lib/msa.js"></script>
@@ -21,7 +21,7 @@
 		
 		//Create a tree
 		var m = new msa({
-			el: document.getElementById("tree"),
+			el: document.getElementById("msa"),
 			importURL: "./results/gfp.clustal",
 		});
 		m.render() // draw the MSA onto the webpage
