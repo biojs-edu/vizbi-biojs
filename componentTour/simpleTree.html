@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Your amazing HTML page</title>
+</head>
+<body>
+	<!-- Include the local source file -->
+	<script type="text/javascript" src="exelixis.js"></script>
+	
+	<!-- Create a Div Container -->
+	<div id="tree"></div>
+	
+	<!-- Adjust your tree -->
+	<script>
+		//Require the tree
+		var xTree = require("exelixis");
+		
+		//Create a tree
+		xTree.createTree({
+			el: document.getElementById("tree"),
+			tree : {
+				data : "(A,(B,C));"
+			}
+		});
+		
+	</script>
+</body>
+</html>
